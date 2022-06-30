@@ -1,111 +1,130 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
 body{
-    font-family: montserrat;
-
+    font-family: Mulish;
 }
 
-nav{
-    background: darksalmon;
-    height: 80px;
-    width: 100%;
+.nav_bar{
+    width: 1440px;
+    height: 84px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+.logo{
+    position: absolute;
+    width: 95px;
+    height: 84px;
+    left: 5px;
+    top: 7px;
+    background-image: url("images/medbc_logo.PNG");
 }
 
-nav ul{
-    float: right;
-    margin-right: 20px;
+.btn-connect_wallet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    gap: 12px;
+    position: absolute;
+    width: 160px;
+    height: 45px;
+    left: 1240px;
+    top: 20px;
+    background: #FDA4BA;
+    border-radius: 50px;
 }
 
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+.part2{
+    background-image: url("images/bg.jpg");
+    height: 840px;
+    width: 1440px;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-nav ul li a{
-    color: white;
-    padding: 7px 13px;
-    border-radius: 3px;
-    font-size: 17px;
-    text-transform: uppercase;
+.text-connect_wallet{
+    width: 140px;
+    height: 23px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-a.active, a:hover{
-    background: #1b9bff;
-    transition: .5s;
+.text-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 414px;
+    height: 25px;
+    left: 754px;
+    top: 30px;
 }
 
-.check_btn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.text-home{
+    width: 56px;
+    height: 25px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #000000;
 }
 
-#check{
-    display: none;
+.text-how_it_works{
+    width: 129px;
+    height: 25px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-@media (max-width: 952px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+.text-faqs{
+    width: 51px;
+    height: 25px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #000000;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
 
-@media (max-width: 858px){
-    .check_btn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover, a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
-
-section{
-    background: url(820180.png) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
+.text-about_us{
+    width: 88px;
+    height: 25px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #000000;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
 }
